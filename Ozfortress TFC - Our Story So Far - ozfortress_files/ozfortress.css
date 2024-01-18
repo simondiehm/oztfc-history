@@ -1,0 +1,103 @@
+/* ***********************************
+	ozfortress.com stylesheet
+
+	Copyright Merkworx Services Pty Ltd 2006
+
+	Initial Element Styling
+*********************************** */
+html, body, form { margin: 0; padding: 0; }
+
+label { cursor: pointer; }
+hr { display: none; }
+a { text-decoration: none; color: #cc3333; }
+a.normaltexturl { color: #363b3d; }
+a.normaltexturl:hover { text-decoration: none; }
+a:hover { text-decoration: underline; color: #ff3333; }
+a img { border: none; }
+img.inlineimg { display: inline; }
+
+h1, h2, h3, h4, h5, h6 { margin: 0; font-weight: bold; }
+h1, h2 { padding-top: 10px; padding-bottom: 5px; }
+h1 { font-size: 2.1em; /*background-color: maroon; */}
+h2 { font-size: 1.9em; /*background-color: darkblue; */}
+h3 { font-size: 1.6em; /*background-color: darkgreen; */}
+h4 { font-size: 1.3em; /*background-color: darkred; */}
+h5 { font-size: 1em; /*background-color: darkorange; */}
+h6 { font-size: 1em; /*background-color: yellow; */}
+
+/*ul, li { margin: 0; padding: 0; list-style: none; }*/
+/*#content ul { list-style: disc; margin-bottom: 15px; }
+#content li { margin-left: 35px; list-style: disc; }*/
+
+/* ***********************************
+	Common Classes
+*********************************** */
+.time { font-weight: bold; }
+.hide { display: none; }
+.orange { color: #ffcc66; }
+.blue { color: #99ddff; }
+.green { color: #99cc99; }
+.red { color: #cc3333; }
+.floatright { float: right; }
+.floatleft { float: left; }
+.clearfloat { clear: both; }
+.alignright { text-align: right; }
+.alignleft { text-align: left; }
+.imagepad { padding: 6px; }
+.center { text-align: center; }
+.nowrap { white-space: nowrap; }
+
+.alt1 {
+	background-color: #f9f9f9;
+	background-image: url("/styles/aphotic/layout/alt1_gradient.gif");
+	background-position: bottom;
+	background-repeat: repeat-x;
+}
+
+.alt2 {
+	background-color: #f2f2f2;
+	background-image: url("/styles/aphotic/layout/alt2_gradient.gif");
+	background-position: bottom;
+	background-repeat: repeat-x;
+}
+
+.seperator {
+	background-image: url("/styles/aphotic/layout/th_gradient.gif");
+	background-repeat: repeat-x;
+	background-position: top;
+	background-color: #18242c;
+	height: 5px;
+	color: white;
+	font-size: 0.8em;
+}
+
+/* ***********************************
+	Post Elements
+*********************************** */
+abbr, acronym { border-bottom: 1px dashed #cc3333; cursor: help; }
+blockquote { border-left: 3px solid #6d7375; padding: 10px 20px; background-color: #E1E7EB; }
+blockquote div { padding: 10px; }
+blockquote p { padding: 10px; }
+
+div.code { border: 1px inset; padding: 4px; background-color: #e1e7eb; margin: 15px; margin-top: 25px; }
+div.code .title { margin-bottom: 3px; font-weight: bold; }
+div.code code { display: block; padding: 4px; white-space: pre; }
+
+/* code, samp, kbd, var, pre { } */
+
+.wysiwyg {
+	background-color: #f5f8fa;
+	color: #363b3d;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	font-size-adjust: none;
+	font-stretch: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: normal;
+	margin: 5px;
+	padding: 0px;
+}
+
+

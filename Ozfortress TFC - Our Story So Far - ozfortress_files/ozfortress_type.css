@@ -1,0 +1,149 @@
+/* ***********************************
+	ozfortress.com stylesheet
+
+	Copyright Merkworx Services Pty Ltd 2006
+
+	Typography
+*********************************** */
+html, body
+{
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	
+}
+
+/* ***********************************
+	Welcome Panel
+*********************************** */
+#welcomepanel {
+	font-family: Tahoma;
+}
+
+#welcomepanel #ql_username input, #welcomepanel #ql_password input {
+	font-size: 1em;
+}
+
+#welcomepanel #greeting {
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+#welcomepanel #privatemessages {
+	font-size: 11px;
+	padding-top: 1px;
+}
+
+#welcomepanel #time {
+	font-size: 0.9em;
+}
+
+#welcomepanel #privatemessages.new {
+	font-weight: bold;
+}
+
+/* ***********************************
+	Infopane
+*********************************** */
+#infopane {
+	font-size: 10px;
+}
+
+#infopane span {
+	font-weight: bold;
+}
+
+#infopane #latestmedia a {
+	color: #ffffff;
+	font-family: Tahoma, Verdana, Arial;
+	/*font-weight: bold;*/
+}
+
+#infopane #latestmedia a:hover { color: #ffffff; }
+
+/* ***********************************
+	Breadcrumb
+*********************************** */
+#breadcrumb {
+	font-size: 11px;
+	line-height: 1.5;
+}
+
+#breadcrumb strong {
+	padding: 2px;
+}
+
+#breadcrumb a {
+	font-weight: bold;
+	padding: 2px;
+}
+
+#breadcrumb a.current:hover {
+	text-decoration: none;
+}
+
+/* ***********************************
+	More Links
+*********************************** */
+#morelinks li a {
+	font-weight: bold;
+	font-size: 11px;
+	padding: 3px 10px;
+}
+
+/* ***********************************
+	Menu
+*********************************** */
+#menu {
+	font-family: Tahoma;
+	font-size: 0.9em;
+	line-height: 1.5;
+}
+
+#menu li.heading {
+	font-weight: bold;
+}
+
+#menu li.heading a {
+	color: #ffffff;
+}
+
+#menu li.heading a:hover {	color: #ffffff; }
+
+/* ***********************************
+	Content
+*********************************** */
+.newsbit .body .category {
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+.newsbit .body .message {
+	line-height: 1.5;
+}
+
+.newsbit .top .title h2 {
+	font-size: 1.3em;
+	line-height: 31px;
+	letter-spacing: -0.005em;
+}
+
+.newsbit .top .details {
+	font-size: 0.85em;
+}
+
+.newsbit .footer .comments a {
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+/* ***********************************
+	Footer
+*********************************** */
+#footer #buttons a {
+	font-weight: bold;
+}
+
+#footer #copyright {
+	font-size: 0.8em;
+}

@@ -1,0 +1,780 @@
+/* ***********************************
+	ozfortress.com stylesheet
+
+	Copyright Merkworx Services Pty Ltd 2006
+
+	Layout CSS
+*********************************** */
+
+/* ***********************************
+	FORMS
+*********************************** */
+
+fieldset, legend, input, textarea, select {
+	margin: 0;
+	padding: 0;
+}
+
+fieldset {
+	border: 0;
+	margin-bottom: 20px;
+}
+
+fieldset legend {
+	font-size: 1.1em;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+#quicksearch .bginput {
+padding: 2px;
+}
+
+#quicksearch .button {
+padding: 0 6px;
+}
+
+.formelement {
+	margin-bottom: 5px;
+}
+
+.formelement.optional label {
+	font-weight: normal;
+	font-style: italic;
+}
+
+.contentbox dd {
+
+}
+
+dl.perms dd {
+	margin-left: 350px;
+}
+
+dl.perms dt {
+	width: 340px;
+}
+
+.formelement label.nomargin {
+	float: none;
+	width: auto;
+}
+
+.formelement.checkbox label {
+	float: none;
+	font-weight: normal;
+}
+
+.formelement.multicheckbox .checkboxes {
+	margin-left: 10px;
+}
+
+.formelement.multicheckbox .checkboxes div {
+	margin-bottom: 3px;
+}
+
+.formelement.multicheckbox .checkboxes label {
+	float: none;
+	width: auto;
+	text-align: left;
+	font-weight: normal;
+	font-size: 0.8em;
+}
+
+.formelement.checkbox {
+	margin-left: 10px;
+}
+
+.formelement.qr_checkbox {
+	height: 34px;
+	line-height: 2.6;
+	padding-left: 10px;
+	margin-bottom: 0;
+}
+
+.formelement.qr_checkbox input {
+	margin-left: 10px;
+}
+
+.formelement.select { 
+	margin-left: 10px;
+}
+
+.formelement.date {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.formelement label {
+	padding: 5px 5px 5px 0;
+}
+.formelement select {
+	padding: 4px;
+}
+
+.formelement.list ul {
+	margin-left: 210px;
+	width: 350px;
+}
+
+.formelement.button input {
+	padding: 5px 15px;
+	margin: 0;
+}
+
+.formelement.runninglength input {
+	width: 25px;
+	text-align: center;
+}
+
+.formelement.smallmargin {
+	margin-bottom: 2px;
+}
+
+.formelement.birthdate select, .formelement.birthdate input {
+	margin-top: 0;
+}
+
+.formelement.date input, .formelement.datetimeline input {
+	width: 40px;
+}
+
+.formelement.datetimeline input.timeinput {
+	width: 25px;
+	text-align: center;
+}
+
+.formelement.datetime input {
+	width: 20px;
+	text-align: center;
+}
+
+.formelement input[type="textbox"] {
+	padding: 4px;
+}
+
+div.formelement p {
+	font-size: 0.85em;
+}
+
+.formelement.button p {
+	padding: 0 0 0 10px;
+}
+
+.formelement.checkbox p {
+	margin-left: 20px;
+}
+
+.formelement.error input, .formelement.error select {
+	border: 2px solid red;
+}
+
+.formelement.error label {
+	color: red;
+}
+
+.formelement.error.multicheckbox .checkboxes input {
+	border: none;
+}
+
+fieldset p {
+	margin: 0;
+	padding: 0;
+	padding: 0 0 0 20px;
+}
+
+.buttons {
+	border-top: 1px solid #dde1e5;
+	border-bottom: 1px solid #dde1e5;
+	padding: 10px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.qr_buttons {
+	float: left;
+}
+
+.qr_buttons input {
+	padding: 5px 15px;
+	margin: 0;
+}
+
+input#tb_subject { padding: 4px; }
+
+.attach_buttons {
+	float: left;
+	margin-left: 10px;
+}
+
+.attach_buttons input {
+	padding: 5px 15px;
+	margin: 0;
+}
+
+.attach_extensions {
+	line-height: 1.5;
+	height: 33px;
+	font-family: Tahoma;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.buttons input {
+	padding: 5px 15px;
+	margin: 0;
+}
+
+.buttons a { padding: 3px; }
+
+.letternav { border: 1px solid #363b3d; font-size: 0.8em; float: left; }
+.letternav ul { list-style: none; margin: 0; padding: 0;  }
+.letternav ul li { float: left; padding: 3px; background-color: #e1e7eb; text-align: center; border-left: 1px solid #f9f9f9; }
+.letternav ul li a { color: #1a232b; }
+.letternav ul li a:hover { color: #1a232b; }
+.letternav ul li.current { background-color: #b8c7d1; font-weight: bold; }
+
+
+/* ***********************************
+	TABLES AND CONTENT AREAS
+*********************************** */
+
+table.styled {
+	clear: both;
+	border: 1px solid #363b3d;
+	width: 100%;
+	border-spacing: 1px;
+	margin-bottom: 10px;
+
+}
+
+table.styled tr, table.styled tr th, table.styled tr td {
+	padding: 10px;
+	line-height: 1.5;
+}
+
+table.styled caption, .caption {
+	width: 100%;
+	padding: 15px 10px 8px;
+	
+	background-image: url("/styles/aphotic/layout/caption_bg.gif");
+	background-repeat: no-repeat;
+	background-position: top left;
+	/*background-color: #18242c;*/
+	
+	color: #f5f5f5;
+	font-family: Tahoma;
+	font-size: 0.85em;
+	font-weight: bold;
+	
+	text-align: left;
+}
+
+.caption {
+	height: 13px;
+	width: 740px;
+	clear: both;
+}
+
+.caption.taller {
+	height: 23px;
+}
+
+div.caption.nowidth {
+	width: 100%
+}
+
+#lastpost { /* necessary as showthread isnt a table, lastpost is best spot for it */
+
+}
+
+
+table.styled caption a, .caption a {
+	color: #f5f5f5;
+	font-weight: bold;
+	padding: 5px 2px;
+}
+
+table.styled caption a:hover, .caption a:hover { color: #f5f5f5; }
+
+table.styled caption .vbmenu_control, .caption .vbmenu_control {
+	float: right;
+	padding-left: 6px;
+	margin-left: 6px;
+	font-weight: bold;
+}
+
+table.styled caption .vbmenu_control a:hover, .caption .vbmenu_control a:hover { color: #f5f5f5; }
+
+table.styled caption .vbmenu_control a, .caption .vbmenu_control a {
+	color: #f5f5f5;
+	font-weight: bold;
+}
+
+table.styled th {
+	background-image: url("/styles/aphotic/layout/th_gradient.gif");
+	background-repeat: repeat-x;
+	background-position: top;
+	background-color: #18242c;
+	text-align: center;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-family: Tahoma;
+	font-size: 0.85em;
+	color: #f5f5f5;
+}
+
+table.styled th.left {
+	text-align: left;
+}
+
+table.styled th a:hover { color: #FFFFFF; }
+
+table.styled th a {
+	color: #FFFFFF;
+}
+
+table.styled thead th a:hover { color: #f5f5f5; }
+
+table.styled thead th a {
+	color: #f5f5f5;
+}
+
+table.styled th.left {
+	text-align: left;
+}
+
+table.styled tfoot td {
+	background-image: url("/styles/aphotic/layout/tfoot_gradient.gif");
+	background-repeat: repeat-x;
+	background-position: bottom;
+	background-color: #f9f9f9;
+	text-align: center;
+	font-weight: bold;
+}
+
+table.styled tfoot.filter td {
+	text-align: left;
+	font-weight: normal;
+}
+
+tr.level1_nopost, tr.level2_nopost {
+	background-image: url("/styles/aphotic/layout/th_gradient.gif");
+	background-repeat: repeat-x;
+	background-position: top;
+	background-color: #18242c;
+	color: #f5f5f5;
+	text-align: left;
+}
+
+tr.level1_nopost a:hover, tr.level2_nopost a:hover { color: #f5f5f5; }
+
+tr.level1_nopost a, tr.level2_nopost a {
+	color: #f5f5f5;
+	font-weight: bold;
+}
+
+tr.norows {
+	height: 40px;
+}
+
+.topcontrols, .bottomcontrols {
+	margin: 10px 0;
+}
+
+.inlinedropdown { clear: right; float: right; margin: 0 0 10px; }
+.inlinedropdown label { font-weight: bold; padding: 5px; }
+
+#sel_do { padding: 4px; }
+#inlinego.button { padding: 2px 5px; margin: 0 0 0 2px; }
+
+.normaltext {
+	color: #363b3d;
+}
+
+.normaltext:hover {
+	text-decoration: none;
+}
+
+.postbit { border: 1px solid #a9b2b7; margin-bottom: 10px; background-color: #f5f8fa; background-image: url("/styles/aphotic/layout/postbit_bottomgradient.gif"); background-position: bottom; background-repeat: repeat-x; clear: right; }
+.postbit .posterdetails, .postbit .thrext, .postbit .message, .postbit .postedited, .postbit .signature, .postbit .attachments, .postbit .controls, .postbit .upcomingbit { padding: 6px; }
+
+.postbit .topbar {
+	background-image: url("/styles/aphotic/layout/th_gradient.gif");
+	background-repeat: repeat-x;
+	background-position: top;
+	background-color: #18242c;
+	font-size: 10px;
+	color: #ffffff;
+	padding: 5px 5px 6px;
+}
+.postbit .topbar .tools { float: right; font-weight: bold; margin-top: -6px; }
+.postbit .topbar .tools  a { padding: 5px; }
+.postbit .topbar a { color: #ffffff; }
+.postbit .topbar a:hover { color: #ffffff; }
+.postbit .topbar img { position: relative; top: 5px; }
+.postbit .topbar input { position: relative; top: 3px; }
+
+.postbit .posterdetails { background-image: url("/styles/aphotic/layout/postbit_topgradient.gif"); background-position: top; background-repeat: repeat-x; width: 746px; background-color: #f0f4f5; }
+.postbit .posterdetails .misc { float: right; text-align: right; font-size: 0.8em; line-height: 1.5; }
+.postbit .posterdetails .misc .ranks { margin: 5px 0; }
+.postbit .posterdetails .misc .ranks img{ padding-left: 5px; }
+.postbit .posterdetails .avatar { float: left; padding-right: 6px; }
+.postbit .posterdetails .secondarytitle { color: #6d7375; font-size: 0.8em; }
+
+.postbit .thrext { padding: 20px; font-family: Tahoma; background-image: url("/styles/aphotic/layout/postbit_topgradient.gif"); background-position: top; background-repeat: repeat-x; width: 718px; background-color: #f0f4f5; line-height: 1.5; }
+.postbit .thrext .misc { float: right; text-align: right; font-size: 0.8em; }
+.postbit .thrext .misc .screenshot { border: 2px solid black; }
+.postbit .thrext .mediatitle { font-size: 1.6em; font-weight: bold; }
+.postbit .thrext .downloadlink { clear: both; text-align: center; font-size: 1em; padding: 20px 0 0; line-height: 1.2; }
+.postbit .thrext .downloadlink a { font-size: 2em; font-weight: bold; padding: 5px; }
+.postbit .thrext .previewthumbs { clear: both; text-align: center; padding: 20px 0 0; }
+
+.postbit .thrext p { font-size: 0.9em; }
+.postbit .thrext .detail { font-size: 1em; }
+.postbit .thrext .minordetail { font-size: 0.8em; color: #6d7375; }
+
+.postbit .thrext dl { float: right; font-size: 0.85em; margin: 0; }
+.postbit .thrext dt { color: #6d7375; float: left; width: 100px; text-align: right; }
+.postbit .thrext dd { margin-left: 110px; width:150px; }
+
+.postbit .message { font-size: 1em; clear: both; border-top: 1px solid #d3dade; line-height: 1.5;}
+.postbit .message p { margin: 0; margin-bottom: 0.8em; }
+.postbit .message blockquote { margin: 10px 20px; }
+.postbit .message ul { margin: 5px 0 10px; padding: 0 30px; }
+.postbit .message li { margin-bottom: 2px; }
+
+
+.shrunkimage { 
+	font-size: 0.8em;
+	padding-top: 4px;
+	padding-bottom: 5px;
+	color: white;
+	background-color: #363b3d;
+	text-align: center;
+}
+
+.smallfont {
+	font-size: 0.85em;
+	line-height: 1.5;
+}
+
+.bigusername { font-size: 1.6em; }
+
+.postbit .username {
+	margin-top: 2px;
+}
+.postbit .usertitle {
+	padding: 5px 0;
+	font-size: 12px;
+}
+
+img.shrunk {
+	border: 5px solid #363b3d;
+}
+
+.postbit .postedited { color: #b6bdbf; font-style: italic; font-size: 0.85em; }
+.postbit .postedited a { color: #be8585; }
+.postbit .signature { font-size: 0.85em; color: #6d7375; padding: 0 6px 20px; line-height: 1.5; }
+
+.postbit .controls { text-align: right; min-height: 25px }
+
+#posts .inlinemod .postbit {
+	background-color: #da9191;
+}
+
+#posts .inlinemod .postbit .posterdetails {
+	border-top: 1px solid #ca888a;
+	border-bottom: 1px solid #ca888a;
+	background-color: #e29596;
+	background-image: url("/styles/aphotic/layout/postbit_topgradient_inlinemod.gif");
+	background-position: top;
+	background-repeat: repeat-x;
+	width: 746px;
+}
+
+#posts .inlinemod .postbit .message {
+	border-top: 1px solid #e99a9a;
+}
+
+#posts .inlinemod .postbit .controls {
+	background-image: url("/styles/aphotic/layout/postbit_bottomgradient_inlinemod.gif");
+	background-position: bottom;
+	background-repeat: repeat-x;
+}
+
+.inputbox {
+	padding: 10px;
+	border: 1px solid #363b3d;
+	background-image: url("/styles/aphotic/layout/editor_gradient.gif");
+	background-repeat: repeat-x;
+	background-position: top;
+	background-color: #ebebeb;
+	margin-bottom: 20px;
+}
+
+.editorbox {
+
+}
+
+.inputbox .nr_postmessage {
+	padding: 6px;
+}
+
+.inputbox.editorbox .buttons {
+/*	margin-bottom: 10px;	*/
+}
+
+.inputbox h4, .inputbox h2 { padding: 10px 0; }
+.inputbox p { padding: 0 0 10px; margin: 0px; }
+.inputbox li { padding-left: 20px; padding-bottom: 5px; }
+.inputbox li img { vertical-align: text-bottom; }
+
+.wysiwyg { padding: 6px; }
+
+.quickedit { width: 100%; }
+.quickedit td.vBulletin_editor { padding: 10px; }
+.quickedit td.vBulletin_editor input { margin-right: 4px; }
+.quickedit td.vBulletin_editor div#quickedit_delete { padding: 5px; }
+
+#poll { padding: 10px; }
+
+#poll dl { margin: 0 0 10px; }
+#poll dt { padding: 5px 0; font-size: 1em; }
+#poll dt.uservoted { font-weight: bold; }
+
+#poll dd.bar { padding: 1px; margin: 0 0 5px; background-color: #363B3D; background-image: url("/styles/aphotic/layout/page_pattern.jpg"); }
+#poll dd.bar .votebar { background-color: #ffcc33; padding: 5px; white-space: nowrap; font-weight: bold; color: #363B3D; text-shadow: 0 1px rgba(255, 255, 255, 0.5); }
+#poll dd.voters { margin: 0 0 20px; line-height: 1.5; }
+
+.contentbox {
+	padding: 10px;
+	border: 1px solid #363b3d;
+	background-image: url("/styles/aphotic/layout/editor_gradient.gif");
+	background-repeat: repeat-x;
+	background-position: top;
+	background-color: #ebebeb;
+	margin-bottom: 20px;
+}
+
+.contentbox ul, .inputbox ul {
+	list-style: none;
+	margin: 0; padding: 0;
+	margin-left: 0px;
+	margin-bottom: 10px;
+}
+
+.contentbox dd ul, .inputbox dd ul {
+	margin-bottom: 0;
+	margin-left: 0;
+}
+
+.contentbox p { margin: 0; padding: 0; margin-bottom: 10px; }
+.contentbox h5 { margin: 0; padding: 0; margin-bottom: 5px; }
+.contentbox div { padding-bottom: 5px; margin-left: 8px; }
+.contentbox .buttons { border-top: 1px solid #dde1e5; margin-top: 5px; padding-top: 5px; padding-bottom: 0; margin-bottom: 0; margin-left: 0; }
+#poll.contentbox div { margin-left: 0; padding-bottom: 0; }
+
+.inlinelist li { display: inline; }
+
+/*.pagenav * { border: 1px solid red; }*/
+.pagenav { font-family: Tahoma; font-size: 11px; float: right; margin: 0 0 10px; }
+
+.pagenav a {
+	border: 1px solid #6d7375;
+	text-decoration: none;
+}
+
+.pagenav a:hover {
+	border-color: #363b3d;
+	background-color: #FFFFFF;
+	color: #363b3d;
+}
+
+.pagenav a:focus {
+	color: #363b3d;
+}
+
+.pagenav a, .pagenav span {
+	background: none repeat scroll 0 0 #e1e7eb;
+	display: block;
+	float: left;
+	margin-right: 2px;
+	padding: 5px 10px;
+}
+
+.pagenav span.nextprev { border: 1px solid #b6bdbf; color: #b6bdbf; }
+.pagenav a.nextprev { font-weight: bold; }
+
+.pagenav span.current {
+	background: none repeat scroll 0 0 #363b3d;
+	font-weight: bold;
+	border: 1px solid #363b3d;
+	color: #FFFFFF;
+}
+
+
+.vbmenu_popup { padding: 10px; background-color: #e8f0f4; border: 1px solid black; margin-left: -142px; }
+.vbmenu_popup h4, .vbmenu_popup h5 { white-space: nowrap; }
+.vbmenu_popup ul { list-style: none; padding-left: 0px; white-space: nowrap; margin: 10px 0;}
+.vbmenu_popup li { margin: 2px 0; }
+#imod img { padding: 3px; }
+.vbmenu_popup#imod_menu ul li { color: #cc3333; cursor: pointer; }
+.vbmenu_popup#imod_menu ul li:hover { text-decoration: underline; }
+.vbmenu_popup#ajax_post_errors #ajax_post_error_message { padding: 10px; }
+.vbmenu_popup#ajax_post_errors .cancel { text-align: center; font-weight: bold; }
+
+#threadslist .announcement { background-color: #c0cad1; }
+#threadslist .announcement h4 { margin: 0; padding: 0; }
+#threadslist .announcement .viewlink { float: right; }
+
+#threadlist .username { font-size: 0.8em; }
+
+
+#threadslist .alt1 .warzone, #threadslist .alt1 .maps, #threadslist .alt1 .mediacentral, #threadslist .alt2 .warzone, #threadslist .alt2 .maps, #threadslist .alt2 .mediacentral, #threadslist .alt1.deleted, #threadslist .alt2.deleted { background-position: bottom; background-repeat: repeat-x; }
+#threadslist .alt1 .warzone { background-image: url("/styles/aphotic/layout/warzone_alt1_gradient.gif"); background-color: #e5efe5; }
+#threadslist .alt1 .maps { background-image: url("/styles/aphotic/layout/maps_alt1_gradient.gif"); background-color: #f9e5e5; }
+#threadslist .alt1 .mediacentral { background-image: url("/styles/aphotic/layout/mc_alt1_gradient.gif"); background-color: #f9f2e5; }
+#threadslist .alt2 .warzone { background-image: url("/styles/aphotic/layout/warzone_alt2_gradient.gif"); background-color: #e2eae2; }
+#threadslist .alt2 .maps { background-image: url("/styles/aphotic/layout/maps_alt2_gradient.gif"); background-color: #f4e3e3; }
+#threadslist .alt2 .mediacentral { background-image: url("/styles/aphotic/layout/mc_alt2_gradient.gif"); background-color: #f4eee3; }
+
+#threadslist .alt1.deleted { background-image: url("/styles/aphotic/layout/deleted_alt1_gradient.gif"); background-color: #e5f2f9; }
+#threadslist .alt2.deleted { background-image: url("/styles/aphotic/layout/deleted_alt2_gradient.gif"); background-color: #e3eef4; }
+
+#threadslist .inlinemod {
+	background-color: #a8b7be;
+	background-image: url("/styles/aphotic/layout/inlinemod_gradient.gif");
+	background-position: bottom;
+	background-repeat: repeat-x;
+}
+
+.forumdescription { font-size: 0.8em; }
+#forumlist #lastpost_column { font-size: 0.8em; }
+.usersviewing { display: inline; }
+.threads_column { font-size: 0.8em; }
+.posts_column { font-size: 0.8em; }
+.views_column { font-size: 0.8em; }
+
+.subforums { margin-top: 5px; }
+.subforums h5 { font-size: 0.8em; }
+.subforums * { margin: 0; padding: 0; }
+.subforums ul { font-size: 0.8em; list-style: none; margin: 0; margin-left: 15px; float: left; width: 230px; }
+
+/* ***********************************
+	PAGE SPECIFIC STYLING
+*********************************** */
+
+.inputbox.rules li {
+	margin-top: 10px;
+}
+
+.profile_currentavatar {
+	padding: 6px;
+	background-color: #dde1e5;
+	margin: 6px;
+	width: 80px;
+	height: 80px;
+	border: 1px solid #363b3d;
+	text-align: center;
+}
+
+.profile_predefavatars td {
+	padding: 6px;
+}
+
+.contactus {
+	list-style: none;
+}
+
+.monthcalendar {
+}
+
+.monthcalendar td {
+	width: 14%;
+}
+
+.monthcalendar tr th.arrows {
+	width: 3%;
+	padding-left: 1px;
+	padding-right: 1px;
+}
+
+.monthcalendar .arrows a:hover {
+	text-decoration: none;
+}
+
+.monthcalendar .week {
+	height: 70px;
+}
+
+.monthcalendar .week .day {
+	background-color: #f9f9f9;
+	background-image: url("/styles/aphotic/layout/alt1_gradient.gif");
+	background-position: bottom;
+	background-repeat: repeat-x;
+	vertical-align: top;
+}
+
+.monthcalendar .week .day.today {
+	background-color: #f9e5e5;
+	background-image: url("/styles/aphotic/layout/maps_alt1_gradient.gif");
+}
+
+.monthcalendar .week .day.today .date
+{
+	font-weight: bold;
+	color: #FF0000;
+}
+
+.monthcalendar .week .date {
+	font-size: 0.7em;
+}
+
+.monthcalendar .week .offday {
+	background-color: #e2e2e2;
+	background-position: bottom;
+	background-repeat: repeat-x;
+	vertical-align: top;
+}
+
+table.styled.smallmonthcalendar {
+	width: 250px;
+	margin: 10px;
+}
+
+.smallmonthcalendar .week .offday {
+	background-color: #e2e2e2;
+	text-align: center;
+}
+
+.smallmonthcalendar .week .day {
+	background-color: #f9f9f9;
+	background-image: url("/styles/aphotic/layout/alt1_gradient.gif");
+	background-position: bottom;
+	background-repeat: repeat-x;
+	text-align: center;
+}
+
+table.styled.weekcalendar {
+	width: 480px;
+	clear: none;
+}
+
+table.styled.weekcalendar caption {
+	width: 480px;
+}
+
+.weekcalendar .day th.date {
+	width: 5%;
+	font-size: 1.1em;
+}
+
+.weekcalendar .day .details {
+	height: 50px;
+	background-color: #f9f9f9;
+	background-image: url("/styles/aphotic/layout/alt1_gradient.gif");
+	background-position: bottom;
+	background-repeat: repeat-x;
+}
+
